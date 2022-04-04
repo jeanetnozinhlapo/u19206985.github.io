@@ -43,12 +43,12 @@
     <h1>  Nozenyanga Jeanet Nhlapo </h1>
     </br>
     <div class="navbar">
-      <input type="button" class="button" value="About Me">
+      <input type="button" class="button" value="About Me" onclick="myFunction()">
       <input type="button" class="button" value="Hobbies & Interests">
       <input type="button" class="button" value="Say Hi!">
     </div>
     </br></br>
-    <div class="to-flex"> 
+    <div class="to-flex" id="about"> 
       <div class="divs"> 
       <h1> About Me </h1>
         <p> I'm Nozi, and it's my pleasure to introduce myself to you. I was born and bred in Qwaqwa, Free State.
@@ -61,7 +61,7 @@
         and climb the ladder of success. However, my long-term goal is to be a renowned web-deloper in an organization and 
         reach the highest level of success. My moral is never to intend to harm anyone on purpose. </p>
     </div>
-    <div class="divs">
+    <div class="divs" id="hobby">
       <h1> Hobbies & Interests </h1>
       <p> <ul>
       <li> Coding </li>
@@ -74,12 +74,17 @@
           </ul> 
       </p>
     </div>
-    <div class="divs">
+    <div class="divs" id="contact">
       <h1> Say Hi! </h1>
       <p> Email: jeanetnozi@gmail.com </br>
           Contact: 071 XXX XXXX </br>
           Address: 976 Park Street, Arcadia, Pretoria, 0007 </p>
     </div>
   </div>
+  <script>
+    myFunction(){
+      document.getElementById("about").style.color = "black";
+    }
+  </script>
   </body>
 </html>
